@@ -1,7 +1,4 @@
 #!/bin/sh
-#This script isn't Advanced 
-#Author Anaz
-#orgin-repository : https://github.com/developeranaz/cloudshell-novnc-automation
 
 #making ngrok directory 
 mkdir ngrok
@@ -19,7 +16,7 @@ rm -r *
 wget 'https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz'
 
 #unzipping ngrok-stable-linux-amd64.zip in selected folder
-unzip ngrok-stable-linux-amd64.zip
+tar -xvzf ngrok-v3-stable-linux-amd64.tgz
 
 #asking ngrok auth token
 echo " Go to ngrok.io in any browser & signin or signup, copy the ngrok auth token and paste here, ngrok token only  (example - 4OXX56rxxxI00QGKnXXXXZ0_3xSAyW24irP0A0ie0bo0B),Readme - https://github.com/developeranaz/cloudshell-novnc-automation   Ngrok Auth token: "
