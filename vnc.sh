@@ -22,9 +22,8 @@ tar -xvzf ngrok-v3-stable-linux-amd64.tgz
 echo " Go to ngrok.io in any browser & signin or signup, copy the ngrok auth token and paste here, ngrok token only  (example - 4OXX56rxxxI00QGKnXXXXZ0_3xSAyW24irP0A0ie0bo0B),Readme - https://github.com/developeranaz/cloudshell-novnc-automation   Ngrok Auth token: "
 read input_token
 echo "You entered: $input_token"
-./ngrok authtoken $input_token
+./ngrok config add-authtoken $input_token
 
-#orgin-repository : https://github.com/developeranaz/cloudshell-novnc-automation
 
 #updating system
 sudo apt update -y
@@ -35,6 +34,6 @@ sudo apt-get install screen -y
 
 #Activating screen
 #pushing docker ubuntu desktop using screen (you can change resolution from below code) 
-screen -d -m docker run -p 8080:80 -e RESOLUTION=1920x1080 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc
+screen -d -m docker run -p 8080:80 -e RESOLUTION=1920x1080 -v dorowu/ubuntu-desktop-lxde-vnc
 
 ./ngrok http 8080
