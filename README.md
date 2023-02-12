@@ -38,4 +38,5 @@ Access it by using your favourite browser
 
 ###### Tip1: In novnc settings change `remote scaling` to `local scaling` for correcting resolution
 ###### Tip2: For installing other packages, initially run `apt update` in terminal of docker machine
-
+###### Tip3: To Keep Cloudshell window always on paste this in console `setInterval(function() {document.elementFromPoint(500, 500).click();}, 30000);
+`
