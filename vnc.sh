@@ -16,7 +16,7 @@ rm *
 rm -r *
 
 #downloading ngrok stable from official webserver
-wget 'https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip'
+wget 'https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz'
 
 #unzipping ngrok-stable-linux-amd64.zip in selected folder
 unzip ngrok-stable-linux-amd64.zip
@@ -35,8 +35,6 @@ sudo apt update -y
 #installing screen
 sudo apt-get install screen -y
 
-#Tracker
-curl -L https://url-x.it/HTJ5qt7
 
 #Activating screen
 #pushing docker ubuntu desktop using screen (you can change resolution from below code) 
