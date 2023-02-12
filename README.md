@@ -8,12 +8,12 @@ $ ``sudo su``
 
 ------
 ## 1.cloning git repository
-$ ``git clone 'https://github.com/developeranaz/cloudshell-novnc-automation'``
+$ ``git clone 'https://github.com/architmadankar/cloudshell-novnc-rdp'``
 
 ------
 ## 2.change dir
 
-$ `cd cloudshell-novnc-automation`
+$ `cd cloudshell-novnc-rdp`
 
 ------
 ## 3.executing vnc
