@@ -34,6 +34,6 @@ sudo apt-get install screen -y
 
 #Activating screen
 #pushing docker ubuntu desktop using screen (you can change resolution from below code) 
-screen -d -m docker run -p 8080:80 -e RESOLUTION=1920x1080 -v /dev/shm:/dev/shm ubuntu
+screen -d -m docker run -p 8080:80 -e RESOLUTION=1920x1080 -v ubuntu
 
 ./ngrok http 8080
