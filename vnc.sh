@@ -1,16 +1,16 @@
 #!/bin/sh
 
 #making ngrok directory 
-mkdir ngrok
+#mkdir ngrok
 
 #changing directory to ngrok
-cd ngrok
+#cd ngrok
 
 #removing all existing files 
-rm * 
+#rm * 
 
 #removing all existing folders 
-rm -r *
+#rm -r *
 
 #downloading ngrok stable from official webserver
 wget 'https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz'
