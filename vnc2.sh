@@ -30,7 +30,7 @@ sudo apt-get install screen -y
 
 # Activating screen
 # Starting an SSH server in a screen session (you can adjust settings as needed)
-screen -dmS ssh-session ssh -o PermitRootLogin=no -o PasswordAuthentication=yes your_username@localhost
+screen -dmS ssh-session ssh -o PermitRootLogin=yes -o PasswordAuthentication=yes g1132220243@localhost
 
 # Starting ngrok to expose the SSH port (22)
 ./ngrok tcp 22
