@@ -28,6 +28,13 @@ sudo apt update -y
 # Installing screen
 sudo apt-get install screen -y
 
+
+# Update SSH configuration to allow root login
+sudo sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+# Restart SSH service to apply the changes
+sudo service ssh restart
+
 # Activating screen
 # Starting an SSH server in a screen session (you can adjust settings as needed)
 screen -dmS ssh-session ssh -o PermitRootLogin=yes -o PasswordAuthentication=yes g1132220243@localhost
